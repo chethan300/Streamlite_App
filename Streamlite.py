@@ -21,8 +21,8 @@ streamlit.dataframe(fruits_to_show)
 ## New section to add fruit vice
 streamlit.header("FruityVice Fruit Advisory")
 try:
-fruit_choice =streamlit.text_input("What fruit would you like information about ?")
-if not fruit_choice :
+fruit_choice=streamlit.text_input('What fruit would you like information about ?')
+if not fruit_choice:
   streamlit.error("please select a fruit to get information")
 else:
 #import requests
