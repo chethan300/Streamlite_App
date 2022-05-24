@@ -1,5 +1,4 @@
 #requirements.txt
-# Generated on: Python 3.10.4
 asn1crypto==1.5.1
 certifi==2021.10.8
 cffi==1.15.0
