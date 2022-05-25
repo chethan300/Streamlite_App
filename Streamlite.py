@@ -21,6 +21,7 @@ streamlit.dataframe(fruits_to_show)
 ## New section to add fruit vice
 streamlit.header("FruityVice Fruit Advisory")
 try:
+  {
 fruit_choice=streamlit.text_input('What fruit would you like information about ?')
 if not fruit_choice:
   streamlit.error("please select a fruit to get information")
@@ -30,7 +31,7 @@ fruityvice_normalized =pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 ##streamlit.text(fruityvice_response.json())
 #Normailze the JSOn
-
+  }
 Except URLError as e:
   
   streamlit.error()
